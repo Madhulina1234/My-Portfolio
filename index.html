@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+      <!-- <img src="./images/header-bg-color.png" alt="" class="w-full" -->
+    </div>
+    <nav
+      class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
+    >
+      <ul
+        class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-gradient-to-r from-[#b820e6] to-[#da7d20] shadow-sm bg-opacity-50"
+      >
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#work">My Work</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+      <div class="flex items-center gap-4">
+        <!-- <button onclick="toggleTheme()"><img src="./images/moon_icon.png" alt="" class="w-6" /></button> -->
+        <a
+          href="#contact"
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border bg-gradient-to-r from-[#b820e6] to-[#da7d20] rounded-full ml-4"
+          >Contact<img src="./images/arrow-icon.png" alt="" class="w-3"
+        /></a>
+        <button class="block md:hidden ml-3" onclick="openMenu()">
+          <img src="./images/menu-black.png" alt="" class="w-6" />
+        </button>
+      </div>
+      </ul> 
+    </nav>
+
+    <!-- header -->
+    <div
+      class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4"
+    >
+      <img src="./images/madhu_photo.jpg" alt="" class="rounded-full w-32" />
+      <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3">
+        Hi!I'm Madhulina Mahapatra
+        <img src="./images/hand-icon.png" alt="" class="w-6" />
+      </h3>
+      <h1 class="text-3xl sm:text-6xl lg:text-[66px]">
+        Frontend developer based in India.
+      </h1>
+      <p class="max-w-2xl mx-auto">
+        I’m a creative Frontend Web Developer focused on crafting clean,
+        responsive, and engaging user interfaces. With skills in HTML, CSS,
+        JavaScript, and modern frameworks like React, I bring designs to life
+        with precision. I’m passionate about delivering seamless user
+        experiences that blend functionality with aesthetic appeal.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+        <a
+          href="./images/Madhulina_mahapatra.cv.pdf"
+          download
+          class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"
+          >my resume <img src="./images/download-icon.png" alt="" class="w-4"
+        /></a>
+        <a
+          href="#contact"
+          class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-wrap flex items-center gap-2"
+          >contact me
+          <img src="./images/right-arrow-white.png" alt="" class="w-4"
+        /></a>
+      </div>
+    </div>
+
+    <!--------about me------>
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+      <h4 class="text-center mb-2 text-lg">Introduction</h4>
+      <h2 class="text-center text-5xl">About Me</h2>
+      <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+        <div class="max-w-max mx-auto relative">
+          <img
+            src="./images/madhu_photo_2.jpg"
+            alt=""
+            class="w-64 sm:w-80 rounded-3xl max-w-none"
+          />
+          <div
+            class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center"
+          >
+            <img src="./images/circular-text.png" alt="" class="w-full animate-spin_slow" />
+            <img
+              src="./images/dev-icon.png"
+              alt=""
+              class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            />
+          </div>
+        </div>
+        <div class="flex-1">
+          <p class="mb-10 max-w-2xl">
+            I’m Madhulina Mahapatra, a passionate Frontend Web Developer
+            dedicated to building modern, responsive, and visually appealing
+            websites. With strong skills in HTML, CSS, JavaScript, and React, I
+            specialize in creating clean and interactive user interfaces. I love
+            transforming ideas and designs into functional, user-friendly web
+            applications. My focus is always on delivering smooth user
+            experiences with attention to detail and performance. Driven by
+            creativity and problem-solving, I strive to craft digital solutions
+            that leave a lasting impact.
+          </p>
+          <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+            <li
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+            >
+              <img src="./images/code-icon.png" alt="" class="w-7 mt-3" />
+              <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+              <p class="text-gray-600 text-sm">
+                HTML, CSS, JavaScript, React Js, Java, C, C++, Python
+              </p>
+            </li>
+            <li
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+            >
+              <img src="./images/edu-icon.png" alt="" class="w-7 mt-3" />
+              <h3 class="my-4 font-semibold text-gray-700">Developer Tools</h3>
+              <p class="text-gray-600 text-sm">VS Code, Git, gitHub</p>
+            </li>
+            <li
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+            >
+              <img src="./images/project-icon.png" alt="" class="w-7 mt-3" />
+              <h3 class="my-4 font-semibold text-gray-700">
+                Database & others
+              </h3>
+              <p class="text-gray-600 text-sm">SQL, mongoDB, OOPs</p>
+            </li>
+          </ul>
+          <h4 class="my-6 text-gray-700 font-semibold">Tools i use</h4>
+          <ul class="flex items-center gap-3 sm:gap-5">
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500"
+            >
+              <img src="./images/vscode.png" alt="" class="w-5 sm:w-7" />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500"
+            >
+              <img src="./images/git.png" alt="" class="w-5 sm:w-7" />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500"
+            >
+              <img src="./images/mongodb.png" alt="" class="w-5 sm:w-7" />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500"
+            >
+              <img src="./images/firebase.png" alt="" class="w-5 sm:w-7" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!------Services------->
+    <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+      <h2 class="text-center text-5xl">My Services</h2>
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+        Here it is my services
+      </p>
+
+      <div class="grid grid-cols-4 gap-6 my-10">
+        <div
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
+        >
+          <img src="./images/web-icon.png" alt="" class="w-10" />
+          <h3 class="text-lg my-4 text-gray-700">Web Design</h3>
+          <p class="text-sm text-gray-600 leading-5">
+            Web development is the process of building,programming...
+          </p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5"
+            >read more<img src="./images/right-arrow.png" alt="" class="w-4"
+          /></a>
+        </div>
+        <div
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
+        >
+          <img src="./images/mobile-icon.png" alt="" class="w-10" />
+          <h3 class="text-lg my-4 text-gray-700">Mobile App</h3>
+          <p class="text-sm text-gray-600 leading-5">
+            App development is the process of building,programming...
+          </p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5"
+            >read more<img src="./images/right-arrow.png" alt="" class="w-4"
+          /></a>
+        </div>
+      
+        <div
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
+        >
+          <img src="./images/ui-icon.png" alt="" class="w-10" />
+          <h3 class="text-lg my-4 text-gray-700">UI/UX Design</h3>
+          <p class="text-sm text-gray-600 leading-5">
+            Designing is the process of building,programming...
+          </p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5"
+            >read more<img src="./images/right-arrow.png" alt="" class="w-4"
+          /></a>
+        </div>
+      
+        <div
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
+        >
+          <img src="./images/graphics-icon.png" alt="" class="w-10" />
+          <h3 class="text-lg my-4 text-gray-700">Graphics Design</h3>
+          <p class="text-sm text-gray-600 leading-5">
+            Graphics Designing is the process of building,programming...
+          </p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5"
+            >read more<img src="./images/right-arrow.png" alt="" class="w-4"
+          /></a>
+        </div>
+    </div>
+
+
+
+<!------my work------->
+<div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
+      <h2 class="text-center text-5xl">My Projects</h2>
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+        Here it is my latest projects
+      </p>
+
+      <div class="grid grid-cols-4 my-10 gap-5">
+        <div class="aspect-square bg-[url('./images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 ">
+                <div>
+                    <h2 class="font-semibold">Frontend Projects</h2>
+                    <p class="text-sm text-gray-700">Web Design</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow=[2px_2px_0_#000] group-hover:bg-lime-400 transition">
+                    <img src="./images/send-icon.png" alt="" class="w-5">
+                </div>
+            </div>
+        </div>
+        <div class="aspect-square bg-[url('./images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 ">
+                <div>
+                    <h2 class="font-semibold">Frontend Projects</h2>
+                    <p class="text-sm text-gray-700">Web Design</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow=[2px_2px_0_#000] group-hover:bg-lime-400 transition">
+                    <img src="./images/send-icon.png" alt="" class="w-5">
+                </div>
+            </div>
+        </div>
+        <div class="aspect-square bg-[url('./images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 ">
+                <div>
+                    <h2 class="font-semibold">Frontend Projects</h2>
+                    <p class="text-sm text-gray-700">Web Design</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow=[2px_2px_0_#000] group-hover:bg-lime-400 transition">
+                    <img src="./images/send-icon.png" alt="" class="w-5">
+                </div>
+            </div>
+        </div>
+        <div class="aspect-square bg-[url('./images/work-4.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 ">
+                <div>
+                    <h2 class="font-semibold">Frontend Projects</h2>
+                    <p class="text-sm text-gray-700">Web Design</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow=[2px_2px_0_#000] group-hover:bg-lime-400 transition">
+                    <img src="./images/send-icon.png" alt="" class="w-5">
+                </div>
+            </div>
+        </div>
+      </div>
+      <a href="#" class="w-max flex items-center justify-center gap-2 bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-black border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg=[#fcf4ff] duration-500">Show more
+        <img src="./images/right-arrow-bold.png" alt="" class="w-4">
+      </a>
+</div>
+
+
+
+<!---------contact-------->
+<div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images.footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center">
+    <h2 class="text-center text-5xl">Get in touch</h2>
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+        contact with me
+      </p>
+      <form action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+         <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+        <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
+            <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white required name="name">
+
+            <input type="email" placeholder="Enter your email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white required name="email">
+        </div>
+        <textarea rows="6" placeholder="Enter your message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 required name="message"></textarea>
+        <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-black rounded-full mx-auto hover:bg-black duration-500">Submit Now
+            <img src="./images/right-arrow-white.png" alt="" class="w-4">
+        </button>
+      </form>
+</div>
+
+
+<!------footer------>
+<div class="mt-20">
+    <div class="text-center">
+        <div class="w-max flex items-center gap-2 mx-auto">
+            <img src="./images/mail_icon.png" alt="" class="w-6">mahapatramadhulina05@gmail.com
+        </div>
+        <div class="w-max flex items-center gap-2 mx-auto">
+            <img src="data:image/png;base64,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" alt="" class="w-6">
+            <h4>+91-8373050398</h4>
+        </div>
+    </div>
+    <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+        <p>©Madhulina Mahaptra. All rights reserved.</p>
+        <ul class="flex item justify-center gap-10 mt-4 sm:mt-0">
+
+            <li><a href="http://linkedin.com/in/madhulinamahapatra055"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAY1BMVEUCdLP///8Aa6+avdqQuNYAcbLK3ev3/f8Ab7FTlcSDsNIke7aWudfZ5/EAbbAAaa6ryuHv9vq40ORHir4AY6t4qM691efT4u7p8fc6g7tKkMJon8lwo8ve7PRel8Urg7umwtzjlIIAAAAD/klEQVR4nO2c0ZaiMAyG20IAQUtBBcWRmfd/yhV1ZhATxD2Qds/2v5gbczqfITRJWyvkTUVdBpZV1sUdRlz/xuEWlG3lsA3jX6hS5CAcEORZ+Q1llBNInUCbG5RRtlH6UqaDKoQzfuoEorhApU456uKqVIrD0SlHXVx1PIgosU0xlI6EW2HeSRmxdg9qLUL3oEIRatsQQ2kPNVEeaqo81FS9hkoSnTAnx3Eo0LukOX202Y61MB2F0sf0fO8qTMPorjGoPD3IH8VGsMUeDQWilg8qWi6qEU9FcqB4xZS6SSi1GTJ1VDxxRUHp9JlJyjq3CQXbAoNi6jEIKBWiTHLDwURB7XBHSfnBEVU4FHwSTPKLY1rAofSegoo4Qh2HokJKyrNFqICCOnC8fgQUOkt12tjzVNJSUJU9T4GgoFjKVGqeQjJfJ57sR0BRc0LNUr1QCTnDXbWyCoWHeslT5pH11O4LeXiZ3Xrq4qunCXTDxDRWDueDXFNxMY12MzqrfiqYuG41W4812veBaoLoEMtiY07A2Ny/aNtB5wqEVnxe6vSPLnBYkIeaqv8YCt57eReGgkRfZpPsM+smPaUmrnGRUAm28/xoie6EJ/3PRZuWm3tWKM6RSdtJe9Uk1CnF1B8RPjGL1TcV6CzYxMPK9Wwa/XIrj4KCwYrZXX2oZIWWXPndS02JjnApgPbwAouEeloyu37R11DmCpUIM3RSH6sZD+NloPL2gH32q/VoaC0CpfbUos2PyrFZYgmonOyve6pGWu0FoOie/0Eji0rzQ+3Iln+gPb2pMDuUeBHjv4ORNf/sUAHSmhEqqbCaHerle9cbrSVcNTvUO6JcZRVKEseR7EKl+AtoF4o4+2MXijglZRdKfqCusgwVoO/fYlBxFDZCay2aAK8XrzrvOKGiNrm1CQAKUnJGjRmh4v2ub6ngTFmi+W8ZqI/BkAmxpynlCov0RaDWTw8lPxGm6PS5BNQmex4P2yfvFGDbKktADR/e9f8Q5ahh8lSBxS4c8dqvYoIy6ISo8NkKzX4LQOGpIzeocY3Zzg9VEEkW34JigsLevc66sQkVoUzUqYIa+wrzQ6HvUyebnqIObQNqjT7s+aGodhzQtSEmKDRx2Iaijrd7KA/loTyUh/JQHspDeSgP5aE8lIfyUB7KQ3koD+WhuKAmnMmjlxdR6/egviJMDyZNjVjUe+oUIDqgeQdKAKr3bf7G+j8+O/ymPNRUeaip8lBT5SyUixcYURnUnlQgSvegSgevD0siUWxdu2htWwgZ8lxiMVl5KMXIGWwrgizurjkkzzdYka5uF0JWvL90HBPAhel2dWaVOXN1Zsd0v2RUBg5cMqpge//x8/fBGKeuY/0DifhbcsLyf44AAAAASUVORK5CYII" alt="" class="w-8"></a></li>
+
+             <li><a href="http://github.com/Madhulina1234"><img src="data:image/png;base64,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" alt="" class="w-8"></a></li>
+
+              <li><a href="https://x.com/MadhulinaMahap1"><img src="data:image/png;base64,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" alt="" class="w-8"></a></li>
+        </ul>
+    </div>
+</div>
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  </body>
+</html>
